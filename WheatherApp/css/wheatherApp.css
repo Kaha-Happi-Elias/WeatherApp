@@ -76,11 +76,6 @@ h2{
     z-index: 1000;
 }
 
-/*#loader-hidden{
-    opacity: 0;
-    visibility: hidden;
-}*/
-
 #loader::after{
     content: "";
     width: 35px;

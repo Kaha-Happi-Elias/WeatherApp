@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQWeatherAPp</title>
+    <link rel="stylesheet" href="css/weather.css"> <!-- this is the external css of my calculator -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- this is the bootstrap css of my calculator -->
+    
+    <script src="js/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <main>
+        <div class="container bg-secondary rounded">
+            <div class="row d-flex justify-content-center">  <!--Added d-flex and justify-content-center-->
+                <form id="city-form" class="g-3 text-center"> <!-- Removed text-center and row classes from the form -->
+                    <div class="wheather col">
+                        <select name="" id="" class="form-select country mb-3 bg-dark-subtle" onchange="loadStates()">
+                            <option selected value="">Select a Country</option>
+                        </select>
+                        <select name="" id="" class="form-select state mb-3 bg-dark-subtle" onchange="loadCities()">
+                            <option selected value="">Select a State</option>
+                        </select>
+                        <select name="" class="form-select city mb-3 bg-dark-subtle">
+                            <option selected id="city" value="">Select a City</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-success mb-3">Check Weather</button>
+                    </div>
+                </form>
+                <div class="row text-center">
+                    <section id="weather-report" class="col text-light fs-5 mb-3">
+                    
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script> <!-- this is the bootstrap JS of my calculator -->
+    <script src="js/Weather.js"></script> <!-- this is the external js of my calculator -->
+</body>
+</html>
